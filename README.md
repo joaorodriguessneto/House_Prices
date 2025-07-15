@@ -1,7 +1,7 @@
 ![Imagem inicial](https://github.com/joaorodriguessneto/House_Prices/blob/main/img/img_inicial.png)
 # 🏡 Projeto de análise de dados imobiliários com previsão do valor de compra (modelo de regressão).      
 # Real estate data analysis project with purchase price prediction (regression model).
-#### ______________________________________________________________________________________________
+#### ______________________________________________________________________________________________________________________
 ## 🔍 Observações relevantes sobre o projeto:
 ## Relevant observations about the project:
 
@@ -19,7 +19,7 @@
 #### No contexto comercial, quanto mais alinhado ao valor real de mercado for o preço de aquisição, mais competitiva e justa será a precificação na revenda. A transparência no valor praticado fortalece a confiança do cliente e transmite credibilidade à empresa. Essa coerência entre preço e valor percebido é essencial para preservar a imagem da organização, promover relações de confiança com os compradores e assegurar a saúde financeira do negócio a longo prazo. 
 #### In the commercial context, the closer the acquisition price is aligned with the true market value, the more competitive and fair the resale pricing will be. Transparency in the pricing practiced strengthens customer trust and conveys credibility to the company. This consistency between price and perceived value is essential to preserve the organization’s reputation, foster trusting relationships with buyers, and ensure the long-term financial health of the business.
 
-####  ______________________________________________________________________________________________
+####  ______________________________________________________________________________________________________________________
 
 #### A HabitaData Analytics me designou a analisar dados imobiliários para apoiar decisões de compra e revenda, com foco em preço e valorização, de acordo com as seguintes características: 
 #### HabitaData Analytics assigned me to analyze real estate data to support purchase and resale decisions, focusing on price and appreciation, based on the following characteristics:
@@ -30,7 +30,7 @@
 
 * ##### 3. Existe uma tendência de que imóveis situados em áreas residenciais menos densas apresentem valores médios superiores em comparação com regiões mais densamente povoadas? / Is there a trend where properties located in less densely populated residential areas show higher average values compared to properties in more densely populated regions?
 
-#### ______________________________________________________________________________________________
+#### ______________________________________________________________________________________________________________________
 
 # 📖 Dicionário de dados fornecido pela empresa: 
 #      Data Dictionary Provided by the Company: 
@@ -128,7 +128,7 @@
 #### Após a análise realizada, foi possível identificar que as características que mais influenciam o preço dos imóveis, dentro do conjunto de dados analisado, são: a localização (zona residencial), o número de banheiros, o número de vagas na garagem e a qualidade do acabamento. 
 ### After the analysis was carried out, it was possible to identify that the features that most influence property prices within the analyzed dataset are: location (residential zone), number of bathrooms, number of parking spaces, and quality of finish.
 
-# ______________________________________________________________________________________________
+#### ______________________________________________________________________________________________________________________
 ## * Zona Residencial / Residential Zone
 
 ![gráfico de barras](https://github.com/joaorodriguessneto/House_Prices/blob/main/img_README/grafico_preco_zona.png)
@@ -161,5 +161,38 @@
 #### The chart shows that the average price of properties increases with the number of parking spaces. Properties without a garage have the lowest average value ($106,772), while those with 3 parking spaces reach the highest value ($176,029). This indicates a clear appreciation associated with the number of garage spaces.
 
 ## * Qualidade de Acabamento. / Finishing Quality.
+
+![gráfico de barras](https://github.com/joaorodriguessneto/House_Prices/blob/main/img_README/grafico_preco_qualidade.png)
+
+#### O gráfico evidencia uma relação positiva entre o nível de qualidade de acabamento e o preço médio dos imóveis. Observa-se que imóveis com qualidade 8 apresentam valores aproximadamente 59% superiores aos de qualidade 4, indicando que a qualidade do acabamento é um fator determinante na valorização do imóvel.
+#### The graph highlights a positive relationship between the level of finishing quality and the average property price. It is observed that properties with quality rating 8 have values approximately 59% higher than those with quality rating 4, indicating that finishing quality is a key factor in property valuation.
+
+## * Ano de Construção do Imóvel. / Year the property was built.
+
+![gráfico de barras poluído](https://github.com/joaorodriguessneto/House_Prices/blob/main/img_README/tabela_ano_construcao_poluido.png)
+
+#### Para melhorar a clareza da análise, foi realizada uma agregação dos dados por década de construção, em vez de utilizar o ano individualmente. Essa abordagem reduziu a poluição visual presente no gráfico original, que apresentava um grande número de barras com valores muito próximos, dificultando a interpretação dos dados. Com a visualização por décadas, tornou-se possível observar tendências mais claras e significativas na variação do preço médio dos imóveis ao longo do tempo, facilitando a compreensão e a comunicação dos insights extraídos.
+#### To improve the clarity of the analysis, the data was aggregated by decade of construction instead of using individual years. This approach reduced the visual clutter present in the original chart, which had a large number of bars with very similar values, making data interpretation difficult. With the visualization by decades, it became possible to observe clearer and more meaningful trends in the variation of average property prices over time, making it easier to understand and communicate the insights extracted.
+
+![grafico de barras ano de construção](https://github.com/joaorodriguessneto/House_Prices/blob/main/img_README/grafico_ano_construcao.png)
+
+#### No gráfico acima, observa-se que imóveis mais recentes tendem a apresentar valores médios mais elevados, evidenciando que o ano de construção é uma variável relevante na precificação. Por exemplo, os imóveis construídos na década de 2000 possuem  uma diferença de cerca de 40% a mais do que os da década de 1940, reforçando a valorização de construções mais modernas. Destaca-se ainda a escolha pela agregação dos dados por década, em substituição à divisão por ano, o que contribuiu significativamente para a redução da poluição visual do gráfico e facilitou a identificação de tendências ao longo do tempo.
+#### In the chart above, it can be observed that more recently built properties tend to have higher average values, highlighting that the year of construction is a relevant factor in pricing. For example, properties built in the 2000s are approximately 40% more expensive than those from the 1940s, reinforcing the appreciation of more modern constructions. It is also worth noting the choice to aggregate the data by decade instead of by individual years, which significantly reduced the visual clutter of the chart and made it easier to identify trends over time.
+
+# 📈 Desempenho Financeiro do Projeto / Financial Performance of the Project
+
+## MAE e MAPE
+
+*  #### MAE (Erro Médio Absoluto / Mean Absolute Error) ➔ Refere-se à média do desvio entre a estimativa do modelo e o preço real de compra do imóvel. / It refers to the average deviation between the model’s estimate and the property’s actual purchase price.
+
+*  #### MAPE (Erro percentual médio absoluto / Mean Absolute Percentage Error) ➔ É a média percentual da diferença entre a estimativa do modelo e o valor real do imóvel. / It refers to the average percentage difference between the model's estimate and the actual property value.
+
+#### Considerando os conceitos mencionados, a empresa Beautiful Houses atualmente define o preço dos imóveis que pretende comprar com base na média dos valores praticados no mercado, além de levar em conta a percepção do diretor executivo e da equipe de vendas. Com isso, elaborei um modelo inicial (baseline) utilizando a média dos preços do conjunto de dados fornecido pelo diretor executivo, resultando nas seguintes métricas:
+#### Considering the mentioned concepts, Beautiful Houses currently sets the prices of the properties it intends to purchase based on the average market values, in addition to taking into account the insights of the executive director and the sales team. With that, I developed a baseline model using the average prices from the dataset provided by the executive director, resulting in the following metrics:
+
+![tabela métrica original](https://github.com/joaorodriguessneto/House_Prices/blob/main/img_README/tabela_metricas_original.png)
+
+*   # Analisando o MAPE apresentado na tabela acima, observa-se que o método atual de precificação da empresa apresenta um erro médio de 17,57% em relação ao valor real dos imóveis. Nosso objetivo com a criação do modelo de regressão linear é reduzir significativamente esse erro, aprimorando a precisão da precificação e potencializando a rentabilidade da empresa.
+*   # Analyzing the MAPE shown in the table above, it is evident that the company’s current pricing method has an average error of 17.57% compared to the actual property values. Our goal with the development of the linear regression model is to significantly reduce this error, improving pricing accuracy and enhancing the company’s profitability.
 
 
