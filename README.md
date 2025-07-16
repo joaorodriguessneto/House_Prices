@@ -217,9 +217,9 @@
 
 # ✔️ Conclusão
 
-    Com base na análise realizada, a HabitaData Analytics desenvolveu um modelo preditivo robusto, capaz de estimar com maior precisão o valor justo de compra de imóveis residenciais. Ao incorporar variáveis como área construída, número de banheiros, ano de construção e localização, foi possível identificar os principais fatores que influenciam os preços no mercado. O novo modelo reduziu o erro absoluto médio (MAE) em 55,18% em relação ao método atualmente adotado, oferecendo estimativas mais confiáveis e alinhadas ao valor real dos imóveis.
+Com base na análise realizada, a HabitaData Analytics desenvolveu um modelo preditivo robusto, capaz de estimar com maior precisão o valor justo de compra de imóveis residenciais. Ao incorporar variáveis como área construída, número de banheiros, ano de construção e localização, foi possível identificar os principais fatores que influenciam os preços no mercado. O novo modelo reduziu o erro absoluto médio (MAE) em 55,18% em relação ao método atualmente adotado, oferecendo estimativas mais confiáveis e alinhadas ao valor real dos imóveis.
 
-    Além de alcançar os objetivos propostos, o projeto proporciona à empresa uma ferramenta estratégica para reduzir riscos na compra e tomar decisões mais seguras na revenda, aumentando a rentabilidade. Os resultados reforçam a importância da análise de dados na gestão de ativos imobiliários, promovendo maior competitividade, eficiência operacional e retorno financeiro consistente.
+Além de alcançar os objetivos propostos, o projeto proporciona à empresa uma ferramenta estratégica para reduzir riscos na compra e tomar decisões mais seguras na revenda, aumentando a rentabilidade. Os resultados reforçam a importância da análise de dados na gestão de ativos imobiliários, promovendo maior competitividade, eficiência operacional e retorno financeiro consistente.
 
 
 
