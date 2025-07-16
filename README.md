@@ -14,7 +14,7 @@
 
 #### No contexto comercial, quanto mais alinhado ao valor real de mercado for o preço de aquisição, mais competitiva e justa será a precificação na revenda. A transparência no valor praticado fortalece a confiança do cliente e transmite credibilidade à empresa. Essa coerência entre preço e valor percebido é essencial para preservar a imagem da organização, promover relações de confiança com os compradores e assegurar a saúde financeira do negócio a longo prazo. 
 
-####  ______________________________________________________________________________________________________________________
+
 
 #### A HabitaData Analytics me designou a analisar dados imobiliários para apoiar decisões de compra e revenda, com foco em preço e valorização, de acordo com as seguintes características: 
 
@@ -122,15 +122,15 @@
 #### Após a análise realizada, foi possível identificar que as características que mais influenciam o preço dos imóveis, dentro do conjunto de dados analisado, são: a localização (zona residencial), o número de banheiros, o número de vagas na garagem e a qualidade do acabamento. 
 
 
-#### ______________________________________________________________________________________________________________________
-## * Zona Residencial 
+
+* ##  Zona Residencial 
 
 ![gráfico de barras](https://github.com/joaorodriguessneto/House_Prices/blob/main/img_README/grafico_preco_zona.png)
 
-#### O gráfico apresenta a distribuição dos preços em função da classificação das zonas residenciais, com os valores no eixo y e as categorias da zona no eixo x. Observa-se que imóveis localizados em zonas de baixa densidade possuem preços superiores aos situados em zonas de média densidade. Essa diferença pode ser atribuída ao maior valor percebido em ambientes mais exclusivos e reservados.
+#### O gráfico apresenta a distribuição dos preços em função da classificação das zonas residenciais, com os valores no eixo y e as categorias da zona no eixo x.
 
 
-## * Números de Banheiros. 
+* ##  Números de Banheiros. 
 
 ![gráfico de barras](https://github.com/joaorodriguessneto/House_Prices/blob/main/img_README/grafico_preco_banheiro.png)
 
@@ -141,7 +141,7 @@
 
 #### No conjunto de dados analisado, observa-se que o número de imóveis com apenas um banheiro é 26% maior do que o de imóveis com dois banheiros, indicando uma predominância desse tipo. Apesar disso, os imóveis com dois banheiros, embora menos numerosos, apresentam valores médios superiores, refletindo uma valorização associada ao maior número de banheiros.
 
-## * Números de Garagens. 
+* ##  Números de Garagens. 
 
 ![porcentagem número de garagens](https://github.com/joaorodriguessneto/House_Prices/blob/main/img_README/porcentagem_garagem.png)
 
@@ -153,14 +153,14 @@
 #### O gráfico mostra que o preço médio dos imóveis aumenta conforme a quantidade de vagas na garagem. Imóveis sem garagem possuem o menor valor médio ($106.772), enquanto os com 3 vagas alcançam o maior valor ($176.029). Isso indica uma clara valorização associada ao número de garagens.
 
 
-## * Qualidade de Acabamento. 
+* ##  Qualidade de Acabamento. 
 
 ![gráfico de barras](https://github.com/joaorodriguessneto/House_Prices/blob/main/img_README/grafico_preco_qualidade.png)
 
 #### O gráfico evidencia uma relação positiva entre o nível de qualidade de acabamento e o preço médio dos imóveis. Observa-se que imóveis com qualidade 8 apresentam valores aproximadamente 59% superiores aos de qualidade 4, indicando que a qualidade do acabamento é um fator determinante na valorização do imóvel.
 
 
-## * Ano de Construção do Imóvel. 
+* ##  Ano de Construção do Imóvel. 
 
 ![gráfico de barras poluído](https://github.com/joaorodriguessneto/House_Prices/blob/main/img_README/tabela_ano_construcao_poluido.png)
 
@@ -190,6 +190,37 @@
 ![tabela métrica modelo de regressão](https://github.com/joaorodriguessneto/House_Prices/blob/main/img_README/tabela_metrica_apos_teste.png)
 
 #### A análise dos resultados do modelo de regressão linear desenvolvido pela HabitaData Analytics evidencia uma melhoria significativa em relação à metodologia de precificação anteriormente utilizada por essa empresa. Enquanto o processo atual apresentava um Erro Percentual Médio Absoluto (MAPE) de 17,57%, o novo modelo reduziu esse índice para 7,84%, o que representa uma diminuição de aproximadamente 55% no erro médio.  Essa melhoria tem implicações diretas na estratégia de negócio, especialmente no modelo baseado na compra, reforma e revenda de imóveis. Quanto mais precisa for a estimativa do valor de compra, maior a chance de maximizar o lucro na etapa de revenda. Dessa forma, o modelo proposto contribui não apenas para decisões mais assertivas, mas também para o aumento da rentabilidade, ao evitar aquisições com valores acima do ideal.
+
+# 📋 Atendendo às demandas do diretor executivo:
+
+* ### 1º Qual seria o valor estimado de venda de um imóvel com as seguintes especificações? 
+      * Área construída: 8.750 pés²/ft²
+      * Nível de acabamento : 6
+      * Ano em que foi construído : 1985
+      * Quantidade de banheiros : 3
+      * Número de cômodos: 7
+      * Total de lareiras : 1
+      * Vagas disponíveis na garagem : 2
+      * Localizado em uma zona residencial de média densidade populacional 
+
+    * Com base no modelo de regressão linear desenvolvido em nossa análise, a estimativa pontual para um imóvel com essas características é de aproximadamente US$ 166.069,84.
+
+* ### 2º Quais atributos do imóvel exercem maior influência no preço final de venda?
+    * Zona residencial do imóvel
+    * Nível de qualidade do acabamento do imóvel
+    * Número de vagas da garagem
+    * Número de banheiros do imóvel
+
+* ### 3º Imóveis situados em áreas residenciais com menor densidade tendem a apresentar preços mais elevados do que os localizados em zonas de maior densidade?
+
+    * Imóveis em áreas de baixa densidade populacional tendem a ter preços mais altos devido à percepção de maior valor associada à privacidade, exclusividade e qualidade de vida. Esses fatores tornam essas regiões mais atrativas para compradores que buscam conforto, o que contribui para a valorização dos imóveis.
+
+# ✔️ Conclusão
+
+    Com base na análise realizada, a HabitaData Analytics desenvolveu um modelo preditivo robusto, capaz de estimar com maior precisão o valor justo de compra de imóveis residenciais. Ao incorporar variáveis como área construída, número de banheiros, ano de construção e localização, foi possível identificar os principais fatores que influenciam os preços no mercado. O novo modelo reduziu o erro absoluto médio (MAE) em 55,18% em relação ao método atualmente adotado, oferecendo estimativas mais confiáveis e alinhadas ao valor real dos imóveis.
+
+    Além de alcançar os objetivos propostos, o projeto proporciona à empresa uma ferramenta estratégica para reduzir riscos na compra e tomar decisões mais seguras na revenda, aumentando a rentabilidade. Os resultados reforçam a importância da análise de dados na gestão de ativos imobiliários, promovendo maior competitividade, eficiência operacional e retorno financeiro consistente.
+
 
 
 
