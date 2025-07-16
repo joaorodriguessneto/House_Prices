@@ -1,4 +1,4 @@
-![Imagem inicial](https://github.com/joaorodriguessneto/House_Prices/blob/main/img/img_inicial.png)
+![Imagem inicial](https://github.com/joaorodriguessneto/House_Prices/blob/main/img/imagem_inicial_medium.png)
 # 🏡 Projeto de análise de dados imobiliários com previsão do valor de compra (modelo de regressão).      
 #### ______________________________________________________________________________________________________________________
 ## 🔍 Observações relevantes sobre o projeto:
